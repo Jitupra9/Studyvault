@@ -1,0 +1,97 @@
+#section-selector{
+    background: var(--sectionS-b-c);
+    width: 100%;
+    padding: 1rem 3.8rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s linear;
+}
+.section-selector-common{
+    width: 100%;
+    overflow-x:scroll;
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.3rem;
+
+}
+.section-selector-common a{
+   background: var(--sectionS-a-b-c); ;
+   color: var(--black-text-color) ;
+
+}
+
+.section-selector-common::-webkit-scrollbar{
+   display: none;
+}
+.section-selector-inside-right {
+    padding: 0rem 0 0 0.8rem;
+    /* border-left: 1px solid #113f68; */
+}
+.section-selector-inside{
+    display: flex;
+    /* border-right: 1px solid #113f68; */
+    gap: 0.7rem;
+    
+}
+.section-selector-inside a,.section-selector-inside-right a{
+    /* background: var(  --sectionS-a-b-c); */
+      transition: all 0.2s linear;
+    
+}
+.section-selector-inside a:hover,.section-selector-inside-right a:hover{
+   
+    background: var(--sectionS-b-h);
+    color: #fff !important;
+    
+}
+/* .section-selector-inside a:nth-child(2),.section-selector-inside a:nth-child(3),.section-selector-inside a:nth-child(4){
+  color: #000000;
+  
+} */
+.section-selector-common a{
+padding: 0.5rem 1rem;
+border-radius: 0.3rem;
+/* color: #fff; */
+font-size: 0.9rem;
+font-weight: 500;
+
+
+}
+.section-on{
+    color: var(--text-color) !important;
+    background: #0085A1 !important;
+    transition: all 0.3s ease;
+}
+.section-selector-inside-right .section-on{
+    color: var(  --text-color);
+    background: var(--sectionS-b-h);
+    transition: all 0.3s ease;
+}
+.section-on:hover{
+    background-color: var(--sectionS-b-h);
+}
+.section-off{
+    background-color: rgb(116 116 116);
+    opacity: 0.2;
+}
+.section-nutral{
+    /* background-color: #80bcc2; */
+    border: 1px solid rgba(59, 141, 167, 0.847);
+    color: #000;
+}
+.section-selector-inside-right  a{
+    /* color: #000; */
+    font-weight: 600;
+}
+@media (max-width :838px ) {
+    #section-selector{
+        padding: 1rem 3rem;
+    }
+}
+@media (max-width :582px ) {
+    #section-selector{
+        padding: 1rem 1.5rem;
+    }
+}

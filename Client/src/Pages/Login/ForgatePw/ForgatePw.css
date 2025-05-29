@@ -1,0 +1,239 @@
+#forgatepw{
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100lvh;
+    width: 100%;
+    background: var(--uniqcolorback);
+    display: flex;
+    justify-content: center;
+    z-index: 1001;
+    position: relative;
+   
+}
+.forgate-box{
+    width: 28rem;
+    text-align: center;
+    margin-top: 3rem;
+
+}
+.forgate-box h2{
+    width: 28rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.forgate-logo-box{
+    width: 100%;
+   
+}
+.forgate-logo-box h3{
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    font-weight: 600;
+    color: #333;
+   
+}
+
+.forgate-box i{
+   font-size: 14rem;
+   color: #007bff80;
+    
+}
+/* .forgate-box img{
+    height: 18rem;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(7494%) hue-rotate(262deg) brightness(92%) contrast(100%);
+    
+} */
+.forgate-email-enter-box{
+    width: 100%;
+    margin: 1.9rem 0 0 0;
+}
+.forgate-email-enter-box p{
+    text-align: justify;
+    color: #666;
+}
+.forgate-email-enter-box input{
+   border: none;
+   width: 100%;
+   padding: 0.7rem 1rem;
+   margin: 1rem 0 0rem;
+   outline: none;
+   border-radius: 0.2rem;
+   font-size: 1rem;
+   border: 1px solid #ddd;
+   border-radius: 0.3rem;
+}
+.forgate-email-enter-box p:nth-child(3){
+   margin: 0.3rem 0 1rem 0;
+   font-size: 0.8rem;
+
+}
+.forgate-email-enter-box input::placeholder{
+  color: rgb(61, 61, 61);
+}
+.forgate-email-enter-box button{
+  width: 100%;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.9rem 0;
+  font-size: 1.1;
+  border-radius: 0.2rem;
+  cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 1rem 0 0 ;
+}
+
+#forgatepw hr{
+    margin: 2rem 0;
+    
+}
+#forgatepw a{
+    font-size: 1.08rem;
+    color: #007bff;
+    
+}
+#forgatepw a:hover{
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+    
+}
+.forgate-btn{
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    border: 1px solid rgb(184, 178, 178);
+    margin: 4rem 0 2rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+
+
+/* Reset password page */
+
+#reset-password{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--backcolor);
+    position: relative;
+    z-index: 100;
+    
+ 
+ }
+ .reset-password-box{
+     width: 40rem;
+     border: 2px solid rgb(198 208 212);
+     padding: 2rem 1rem;
+     border-radius: 0.2rem ;
+     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.19),inset 9px 9px 50px rgba(255, 255, 255, 0.832),inset -9px -9px 50px rgba(111, 111, 111, 0.163);
+     
+ }
+ .reset-password-box h2{
+     text-align: center;
+     font-size: 1.9rem;
+ }
+ .reset-password-box form{
+     margin: 2rem 0 0 0;
+ }
+ .reset-password-box input{
+     width: 100%;
+     padding: 1rem 2rem;
+     border: none;
+     border: 1px solid #ddd;
+     margin: 1rem 0;
+     border-radius: 0.3rem;
+     font-size: 1rem;
+ 
+ }
+ .reset-password-box button[type = 'submit']{
+     width: 100%;
+     border: none;
+     outline: none;
+     background-color: #007bff;
+     color: #fff;
+     padding: 0.8rem 0;
+     cursor: pointer;
+     font-size: 1rem;
+     border-radius: 0.3rem;
+ 
+ }
+ .reset-password-box hr{
+     margin: 3rem 0;
+ }
+ .reset-password-box .reset-btn{
+     width: 100%;
+     padding: 0.8rem 3rem;
+     border: none;
+     overflow: none;
+     border: 1px solid rgb(184, 178, 178);
+     border-radius: 0.2rem;
+     font-size: 1.1rem;
+     cursor: pointer;
+ }
+ .backto-log-in{
+     width: 40rem;
+     padding: 2rem 2rem;
+     font-size: 1.2rem;
+     border: 2px solid rgba(134, 134, 134, 0.095);
+     
+ }
+ .backto-log-in button{
+    display: block;
+     margin: end;
+     border: none;
+     outline: none;
+     background-color: #4B97D5;
+     color: #fff;
+     padding: 0.3rem 1.6rem;
+     cursor: pointer;
+     margin: 3rem 0 ;
+     width: 100%;
+     font-size: 1rem;
+    
+ }
+
+@media (max-width : 450px) {
+    .forgate-box{
+        width: 85vw;
+        margin-top: 7rem;
+    }
+    .forgate-box img{
+        height: 50vw
+        
+    }
+    .reset-password-box{
+        width: 90vw;
+        
+    }
+    .backto-log-in{
+        width: 90vw;
+    }
+    #forgatepw{
+        height: 100svh;
+    }
+}
+
+
+
+
+
+.forgate-email-enter-box input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0px 1000px #123456 inset !important; 
+    box-shadow: 0 0 0px 1000px #123456 inset !important; 
+    color: #fff !important; 
+    -webkit-text-fill-color: #333 !important;
+  }
+  
+  
+  
+  .forgate-email-enter-box input:autofill {
+    background-color: transparent !important;
+    box-shadow: 0 0 0px 1000px #fff inset !important;
+  }
+  

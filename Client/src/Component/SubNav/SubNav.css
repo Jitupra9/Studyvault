@@ -1,0 +1,123 @@
+#sub-nav-component{
+    position: relative;
+    z-index: 10000000000;
+}
+
+
+#sub-nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--newheadcolor);
+    box-shadow:var(--newshadow);
+    position: relative;
+}
+#sub-nav  .back-to-home-nav,#sub-nav .search-metatrila{
+    padding: 0rem 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all  0.2s  ease;
+    /* box-shadow: 2px 2px 10px #4a72c71e; */
+  
+}
+.same:hover {
+    background-color: var( --newcolor);
+    
+    cursor: pointer;
+    
+}
+
+#sub-nav  h1{
+    font-size: 2rem ;
+    user-select: none;
+    /* padding: 1rem ; */
+    font-weight: 600;
+    color: rgb(0, 145, 255);
+}
+#sub-nav sub{
+    font-size: 0.5rem ;
+    user-select: none;
+    font-weight: 600;
+    color: rgb(0, 145, 255);
+}
+#sub-nav .i{
+    
+    /* fill: black;   */
+    stroke: var(--black-text-color); 
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all 0.2s  ease;
+  
+
+    
+}
+
+.same:hover .i{
+    stroke: var(--text-color) !important;
+}
+#sub-nav i{
+    
+    /* fill: black;   */
+    color:var(--black-text-color); 
+    font-size: 1.2rem;
+  
+
+    
+}
+
+.same:hover i{
+    color: var(--text-color) !important;
+}
+
+.sub-to-sub-nav{
+    width: 100%;
+    height: 4rem;
+    box-shadow:var(--newshadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: scroll;
+    background: var(--newheadcolor);
+}
+.sub-to-sub-nav::-webkit-scrollbar{
+   display: none;
+}
+.sub-to-sub-nav a{
+    text-align: center;
+  color: var(--black-text-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  height: 100%;
+  padding: 0rem 2rem;
+  transition: all 0.2s ease;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.sub-to-sub-nav a:hover{
+  background: var(--newcolor);
+  color: var(--text-color) !important;
+
+}
+.sub-nav-active{
+    background: var(--newcolor);
+    color: var(--text-color) !important;
+
+}
+.sub-to-sub-nav a:active{
+ transform: scale(1.04);
+
+}
+
+@media (max-width : 600px) {
+    .sub-to-sub-nav{
+     
+        justify-content: flex-start;
+     
+    }
+}
